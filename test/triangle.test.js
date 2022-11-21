@@ -1,17 +1,25 @@
-const triangle = require("../src/triangle").Triangle;
+const Triangle = require("../src/triangle.js").Triangle;
 const expect = require("chai").expect;
 
 describe("Testing the Triangle Functions", function () {
-  it("1. The side length of the Cube", function (done) {
-    let c1 = new Cube(2);
-    expect(c1.getSideLength()).to.equal(2);
+  it("1. It's a triangle ?", function (done) {
+    let triangle3 = new Triangle(3, 3, 5);
+    expect(triangle3.isATriangle()).to.equal(true);
     done();
   });
-  it("1. Get surface of the Triangle ", function (done) {
-    let triangle1 = new Triangle(5, 10);
-    expect(Triangle1.getSurface()).to.equal(25);
+
+  it("2. Get surface of the Triangle ", function (done) {
+    let triangle1 = new Triangle(4, 5, 3);
+    expect(triangle1.getSurface()).to.equal(6);
+    done();
+  });
+
+  it("3. Equilateral Triangle ? ", function (done) {
+    let triangle2 = new Triangle(3, 3, 3);
+    expect(triangle2.getEqui()).to.equal(true);
     done();
   });
 });
 
 // chai-exemple-b3-dev-av
+// Air triangle = b*h/2
