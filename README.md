@@ -4,7 +4,7 @@ J'ai utilisé la methode TDD pour les testes, j'ai écris les teste avant le cod
 On demande a l'utilisateur de rentrer les 3 cotées du triangle dans la meme unité de mesure
 
 Methode getSurface -->
-La Methode utilise la formule d'Héro pour calculé la surface
+La Methode utilise la formule d'Héron pour calculé la surface
 
 Methode Equi -->
 Cette methode verifie que les 3 cotés soient bien égaux
@@ -15,3 +15,12 @@ Cette méthode vérifie que les données rentré par l'utilisateur sois bien con
 Classe Cercle
 
 Jutilise l'a méthode BDD, je code la classe avant les test
+
+Methode getCleanValue -->
+Sert a savoir si l'utilisateur a rentrer un nombre et pas une lettre ou chaine de caractère
+
+Methode getSurface -->
+Pour l'air
+
+Methode getPerimetre -->
+Pour le perimetre

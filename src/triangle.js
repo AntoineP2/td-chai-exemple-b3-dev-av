@@ -1,8 +1,8 @@
 class Triangle {
   constructor(c1, c2, c3) {
-    this.c1 = Math.abs(c1);
-    this.c2 = Math.abs(c2);
-    this.c3 = Math.abs(c3);
+    this.c1 = typeof c1 == "number" ? Math.abs(c1) : c1;
+    this.c2 = typeof c2 == "number" ? Math.abs(c2) : c2;
+    this.c3 = typeof c3 == "number" ? Math.abs(c3) : c3;
   }
 
   getCleanValue() {
