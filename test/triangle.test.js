@@ -2,6 +2,12 @@ const Triangle = require("../src/triangle.js").Triangle;
 const expect = require("chai").expect;
 
 describe("Testing the Triangle Functions", function () {
+  it("1. Correct Value ?", function (done) {
+    let triangle4 = new Triangle(3, 3, 3);
+    expect(triangle4.getCleanValue()).to.equal(true);
+    done();
+  });
+
   it("1. It's a triangle ?", function (done) {
     let triangle3 = new Triangle(3, 3, 5);
     expect(triangle3.isATriangle()).to.equal(true);
